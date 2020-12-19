@@ -1,0 +1,12 @@
+package com.britocorp.dashcard.model;
+
+public class Usuario {
+
+	private int id_usuario;
+	private Sprint nome_usuario;
+	private Sprint email_usuario;
+	private Sprint racf_usuario;
+	private Sprint senha_usuario;
+	private Sprint link_foto;
+	
+}

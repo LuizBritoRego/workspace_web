@@ -1,0 +1,9 @@
+package com.britocorp.dashcard.dto;
+
+public class ConsolidadoStatus {
+
+	private String 	nomeAgente;
+	private float 	volume;
+	private int		status;
+	private long 	numeroOp;
+}

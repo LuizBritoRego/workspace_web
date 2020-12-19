@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.isidrocorp.dashcard.dao.UsuarioDAO;
+import br.com.isidrocorp.dashcard.model.Usuario;
+
+@RestController
+public class UsuarioController {
+
+	@Autowired
+	UsuarioDAO dao;
+	
+	@GetMapping("/todos")
+	public ArrayList<Usuario> recuperarTodos(){
+		ArrayList<Usuario> lista;
+		lista = (ArrayList<Usuario>)dao.findAll();
+		return lista;
+	}
+    
+}

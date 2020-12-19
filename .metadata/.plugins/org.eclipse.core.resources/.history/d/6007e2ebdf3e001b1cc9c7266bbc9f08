@@ -1,0 +1,8 @@
+package br.com.britocorp.hello.controller;
+
+public class HelloController {
+
+	public String sayHello() {
+		return "Hello World";
+	}
+}

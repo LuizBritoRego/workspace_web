@@ -1,0 +1,13 @@
+package com.britocorp.dashcard.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "mtb310_ag_financeiro);
+public class AgenteFinanceiro {
+
+	   private integer id_agente,  
+	   private String nome_agente,
+	   private float volume_transacional;
+}

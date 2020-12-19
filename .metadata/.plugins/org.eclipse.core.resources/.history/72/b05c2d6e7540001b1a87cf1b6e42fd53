@@ -1,0 +1,9 @@
+package com.britocorp.dashcard.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.britocorp.dashcard.model.Transacao;
+
+public interface TransacaoDAO extends CrudRepository<Transacao, Integer>{
+
+}

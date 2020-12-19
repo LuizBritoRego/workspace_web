@@ -1,0 +1,5 @@
+package com.britocorp.dashcard.dao;
+
+public class TransacaoDAO {
+
+}

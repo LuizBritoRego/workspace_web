@@ -1,0 +1,31 @@
+label{
+    background-color: #0D6EFD;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    margin-left: 15px;
+    margin-bottom: -25px;
+    color: white;
+    z-index: 10px;
+}
+
+#nomeAgente{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.fundo{
+    background-color: #0D6EFD;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-bottom: -10px;
+    color: white;
+    z-index: 100px;
+    width: 100px;
+}

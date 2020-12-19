@@ -1,0 +1,5 @@
+package com.britocorp.dashcard.model;
+
+public class Usuario {
+
+}

@@ -1,0 +1,36 @@
+package com.britocorp.dashcard.controller;
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.britocorp.dashcard.dao.UsuarioDAO;
+import com.britocorp.dashcard.model.Usuario;
+
+@RestController
+public class UsuarioController {
+
+	@Autowired
+	UsuarioDAO dao;
+	
+	@GetMapping("/todos")
+	public ArrayList<Usuario> recuperarTodos(){
+		ArrayList<Usuario> lista;
+		lista = (ArrayList<Usuario>)dao.findAll();
+		return lista;
+	}
+	
+	@PostMapping("/testeuser")
+	public String testandoUsuario(@RequestBody Usuario dadoslogin) {
+		Usuario u = dao.findByEmailAndSenha("isidro@isidro.com", "1234");
+		if (u != null) {
+			return "Usuario encontrado = "+u.getNome();
+		}
+		else {
+			return "falhou";
+		}
+	}
+
+    
+}
